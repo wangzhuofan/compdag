@@ -4,7 +4,10 @@ Version: 0.0.0.9000
 Authors@R: 
     person("anonymous", "anonymous", , "first.last@example.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: The package is developed for a compositional directed acyclic graphical model, 
+              compDAG, to investigate microbial community coalescence via learning the 
+              causal relationships across microbial communities. It identifies the causal 
+              relationships on both community level and microbe level.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

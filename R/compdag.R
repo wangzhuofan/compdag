@@ -1,7 +1,21 @@
-# compile stan file
-# library(rstan)
+#' compdag
+#'
+#' @param x data of the first community
+#' @param y data of the second scommunity
+#' @param paramx the fixed mu for the first community
+#' @param paramy the fixed mu for the second community
+#'
+#' @return cd=1 indicates that the community-level causal direction is x to y;
+#'         cd=-1 indicates that the community-level causal direction is y to x;
+#'         cd = 0 indicate that there is no causal relationship between x and y.
+#'         mEst is the estimated microbe-level causal effects.
+#'         signalEst is the estimated community-level causal effect.
+#'         x2y is the looic of the model x to y;
+#'         y2x is the looic of the model y to x;
+#'         x0y is the looic of the model that there is no casual relationship.
+#' @export
 
-# prepare data
+
 compdag <- function(x,y,paramx,paramy){
   px = nrow(x)
   py = nrow(y)
